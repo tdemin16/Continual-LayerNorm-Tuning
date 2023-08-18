@@ -1,3 +1,4 @@
+# used to compute upper bound
 from timm import create_model
 
 import torch
@@ -13,7 +14,7 @@ DATASET = 'CIFAR100'
 EPOCHS = 10
 LR = 0.001
 MODEL = 'vit_base_patch16_224'
-TRAIN_CLS = True
+TRAIN_CLS = False
 
 
 def get_dataloaders():
