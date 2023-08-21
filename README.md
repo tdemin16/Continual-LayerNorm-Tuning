@@ -37,8 +37,7 @@ The code does not store trained weights, thus a proper code must be written to s
 
 For any questions, please get in touch with us at thomas.demin@studenti.unitn.it or open an issue.
 
-##
-Citation
+## Citation
 ```
 @misc{demin2023effectiveness,
       title={On the Effectiveness of LayerNorm Tuning for Continual Learning in Vision Transformers}, 
