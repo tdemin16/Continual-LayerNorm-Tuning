@@ -3,7 +3,7 @@ Official Repository of "On the Effectiveness of LayerNorm Tuning for Continual L
 This repository is based on https://github.com/JH-LEE-KR/dualprompt-pytorch.
 
 ## Installation
-Create and activate a conda environment with python 3.8:
+Create and activate a conda environment with Python 3.8:
 ```
 $ conda create -n cln python=3.8
 $ conda activate cln
@@ -17,7 +17,7 @@ $ pip install -r requirements.txt
 Both are automatically downloaded at training time.
 
 ## Training
-Both variants of the algorithm can be trained by simply run the corresponding script. \
+Both algorithm variants can be trained by simply running the corresponding script. \
 To train the Two-Stage variant run:
 ```
 $ ./train_two.sh
@@ -35,8 +35,17 @@ That being said the DDP support is inherited from https://github.com/JH-LEE-KR/d
 
 The code does not store trained weights, thus a proper code must be written to store and load weights.
 
-For any question, please contact us at thomas.demin@studenti.unitn.it or open an issue.
+For any questions, please get in touch with us at thomas.demin@studenti.unitn.it or open an issue.
 
 ##
-Cite
-TODO
+Citation
+```
+@misc{demin2023effectiveness,
+      title={On the Effectiveness of LayerNorm Tuning for Continual Learning in Vision Transformers}, 
+      author={Thomas De Min and Massimiliano Mancini and Karteek Alahari and Xavier Alameda-Pineda and Elisa Ricci},
+      year={2023},
+      eprint={2308.09610},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
