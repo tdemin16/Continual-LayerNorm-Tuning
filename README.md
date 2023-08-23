@@ -39,12 +39,10 @@ For any questions, please get in touch with us at thomas.demin@studenti.unitn.it
 
 ## Citation
 ```
-@misc{demin2023effectiveness,
-      title={On the Effectiveness of LayerNorm Tuning for Continual Learning in Vision Transformers}, 
-      author={Thomas De Min and Massimiliano Mancini and Karteek Alahari and Xavier Alameda-Pineda and Elisa Ricci},
-      year={2023},
-      eprint={2308.09610},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{de2023effectiveness,
+  title={On the Effectiveness of LayerNorm Tuning for Continual Learning in Vision Transformers},
+  author={De Min, Thomas and Mancini, Massimiliano and Alahari, Karteek and Alameda-Pineda, Xavier and Ricci, Elisa},
+  journal={arXiv preprint arXiv:2308.09610},
+  year={2023}
 }
 ```
