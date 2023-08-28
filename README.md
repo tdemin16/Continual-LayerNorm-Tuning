@@ -26,12 +26,12 @@ To train the Single-Stage variant run:
 ```
 $ ./train_single.sh
 ```
-The code supports wandb. Activate it by adding `--wandb` to the bash script. In `engine.py` change `entity` according to your wandb id.
-> Be sure to log into wandb before running with `--wandb` flag.
+The code supports wandb. Activate it by adding `--wandb` to the bash script. In `engine.py`, change `entity` according to your wandb id.
+> Be sure to log into wandb before running with the `--wandb` flag.
 
 ## Disclaimer
-The code should support DDP however we did not test it as it is unnecessary to run on multiple GPUs.
-That being said the DDP support is inherited from https://github.com/JH-LEE-KR/dualprompt-pytorch.
+The code should support DDP, however, we did not test it as it is unnecessary to run on multiple GPUs.
+That being said, the DDP support is inherited from https://github.com/JH-LEE-KR/dualprompt-pytorch.
 
 The code does not store trained weights, thus a proper code must be written to store and load weights.
 
