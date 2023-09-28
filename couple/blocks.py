@@ -189,7 +189,8 @@ class MultiTaskLN(nn.Module):
         self.w = nn.Parameter(w.unsqueeze(0).expand(args.num_tasks, -1))
         self.b = nn.Parameter(b.unsqueeze(0).expand(args.num_tasks, -1))
 
-        self.weight_selection = WeightSelectionMechanism(args, embed_dim)
+        if args.method == 'single_stage':
+            self.weight_selection = WeightSelectionMechanism(args, embed_dim)
 
     def forward(self, x, tasks: torch.Tensor, task_eval: int=-1):
         assert x.size(0) == tasks.size(0)
@@ -250,7 +251,7 @@ class BlockLN(nn.Module):
         x = x + self.drop_path2(self.ls2(self.mlp(x_norm)))
         
         if m1 == {}:
-            return x
+            return x, {}
         else:
             metrics = {k: (m1[k] + m2[k]) / 2 for k in m1.keys()}
             return x, metrics
