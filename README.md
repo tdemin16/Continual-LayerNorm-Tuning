@@ -35,7 +35,7 @@ That being said, the DDP support is inherited from https://github.com/JH-LEE-KR/
 
 The code does not store trained weights, thus a proper code must be written to store and load weights.
 
-For any questions, please get in touch with us at thomas.demin@studenti.unitn.it or open an issue.
+For any questions, please get in touch with us at thomas.demin@unitn.it or open an issue.
 
 ## Citation
 ```
